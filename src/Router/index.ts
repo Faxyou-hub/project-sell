@@ -1,11 +1,22 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
-  { path: '/ទំព័រដើម', name: 'Home', component: () => import('../Views/Home.vue')},
-  { path: '/សេវាកម្មពិសេស', name: 'Offer', component: () => import('../Views/Offer.vue') },
-  { path: '/សេវាកម្ម', name: 'Service', component: () => import('../Views/Service.vue') },
-  { path: '/ម៉ឺនុយ', name: 'Menu', component: () => import('../Views/Menu.vue') },
-  { path: '/អំពីពួកយើង', name: 'About', component: () => import('../Views/About.vue') },
+  { path: '/', name: 'Home', component: () => import('../Views/Home.vue')},
+  { path: '/good-book', name: 'good-book', component: () => import('../Views/GoodBook.vue') },
+  { path: '/books', name: 'books', component: () => import('../Views/Books.vue') },
+  { path: '/contact-us', name: 'contact-us', component: () => import('../Views/Contact.vue') },
+  { path: '/FAQ', name: 'FAQ', component: () => import('../Views/FAQS.vue')},
+  { path: '/about', name: 'About', component: () => import('../Views/About.vue')},
+  { path: '/blog', name: 'Blog', component: () => import('../Views/Blog.vue')},
+  
+  { path: '/children', name: 'Children', component: () => import('../Views/Book/ChildrenBook.vue')},
+  { path: '/educational', name: 'Educational', component: () => import('../Views/Book/EducationalBook.vue')},
+  { path: '/khmer-history', name: 'KhmerHistory', component: () => import('../Views/Book/KhmerHistoryBook.vue')},
+  { path: '/religious', name: 'Religious', component: () => import('../Views/Book/ReligiousBook.vue')},
+  { path: '/judge', name: 'SelfHelp', component: () => import('../Views/Book/JudgeBook.vue')},
+  { path: '/sports', name: 'SportBook', component: () => import('../Views/Book/SportBook.vue')},
+  { path: '/social-science', name: 'SocialScience', component: () => import('../Views/Book/SocialScienceBook.vue')},
+  { path: '/literature', name: 'Literature', component: () => import('../Views/Book/LiteratureBook.vue')},
 ];
 
 const router = createRouter({
